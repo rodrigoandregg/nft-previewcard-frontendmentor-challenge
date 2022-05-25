@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main class="nft__page">
+    <section class="card__container">
+      <figure class="card__picture">
+        <img src="" alt="" class="card__img">
+      </figure>
+      <div class="card__info__container">
+        <div class="info__texts">
+          <h1 class="texts__title">Equilibrium #3429</h1>
+          <p class="texts__paragraph">Our Equilibrium collection promotes balance and calm.</p>
+        </div>
+        <div class="info__numbers">
+          <div class="numbers__price">
+            <img src="" alt="" class="price__icon">
+            <h2 class="price__title">0.041 ETH</h2>
+          </div>
+          <div class="numbers__date">
+            <img src="" alt="" class="date__icon">
+            <p class="date__paragraph">3 days left</p>
+          </div>
+        </div>
+        <div class="info__author">
+          <div class="author__picture">
+            <img src="" alt="" class="author__img">
+          </div>
+          <p class="author__paragraph">Creation of <span class="active">Jules Wyvern</span></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/rodrigoandregg" target="_blank" title="visit my Github profile">Rodrigo Andre
+        Gutierrez</a>.
+    </div>
+  </footer>
 </body>
+
 </html>
