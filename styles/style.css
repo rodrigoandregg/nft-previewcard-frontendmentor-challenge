@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* fonts*/
+    --font1: 'Outfit', sans-serif;
+    /* colors */
+    --paragraph: hsl(215, 51%, 70%);
+    --price: hsl(178, 100%, 50%);
+    --mainBG: hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --title: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: var(--font1);
+    font-size: 18px;
+    background-color: var(--mainBG);
+}
+
+.card__container {
+    width: 320px;
+    margin: 60px auto 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--cardBG);
+}
+
+.card__picture {
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.card__img {
+    width: 100%;
+}
+
+.card__info__container {
+    color: var(--paragraph);
+}
+
+.texts__title {
+    color: var(--title);
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.texts__paragraph {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.info__numbers {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.price__title {
+    font-size: .9rem;
+    color: var(--price);
+}
+
+.date__paragraph {
+    font-size: .9rem;
+}
+
+.info__author {
+    display: flex;
+    padding-top: 15px;
+    border-top: 1px solid var(--line);
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.author__picture {
+    border: 2px solid var(--title);
+    border-radius: 50%;
+    line-height: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.author__img {
+    width: 100%;
+}
+
+.author__paragraph {
+    font-size: .9rem;
+}
+
+.active {
+
+    color: var(--title);
+}
+
+/* footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: var(--paragraph);
+}
+.attribution a {
+    color: var(--price);
+}
